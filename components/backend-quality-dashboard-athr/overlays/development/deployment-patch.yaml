@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: backend-quality-dashboard-athr
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/rhtap-demo-qlpg-tenant/mc-quality-dashboard/backend-quality-dashboard-athr@sha256:3285403653cd33d7920e3e3cb0cf0c6f2ce3c765ae61accf563fd16516bd52bd
+        name: container-image
+        resources: {}
+status: {}
