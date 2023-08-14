@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: frontend-quality-dashboard-dnqi
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/rhtap-demo-qlpg-tenant/mc-quality-dashboard/frontend-quality-dashboard-dnqi@sha256:8ea79201ea68eac35830be4acbc44db0f96ebcbad876133536e7de2f9b510f91
+        name: container-image
+        resources: {}
+status: {}
